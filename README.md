@@ -56,4 +56,4 @@ python3 manage.py createsuperuser
 python3 manage.py runserver
 ```
 
-#### Перейдите по адресу <http://127.0.0.1:8000/admin> или <http://your-host/admin>
+#### Перейдите по адресу <http://127.0.0.1:8000/admin> (или по адресу своего хоста)
