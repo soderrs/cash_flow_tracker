@@ -15,6 +15,7 @@ git clone https://github.com/soderrs/cash_flow_tracker.git
 ```bash
 cd cash_flow_tracker
 python3 -m venv .venv
+
 # Linux/Mac OS
 source .venv/bin/activate
 
@@ -25,7 +26,6 @@ source .venv/bin/activate
 ### Установите необходимые зависимости
 
 ```bash
-python3 -m pip install
 pip install -r requirements/prod.txt
 ```
 
@@ -38,9 +38,8 @@ cp .env.example .env
 ### Примените миграции для БД и загрузите стандартные данные
 
 ```bash
-cd lyceum/
 python3 manage.py migrate
-python3 manage.py loadddata fixtures/core/setup.json
+python3 manage.py loaddata fixtures/core/setup.json
 ```
 
 ### Для доступа в админку Django нужно создать нового пользователя
